@@ -9,15 +9,16 @@ const App = () => {
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
         <Hero />
+        <StarsCanvas />
       </div>
       <About />
       <Skills />
       <Tech />
       <Works />
       <Feedbacks />
-      <div className="realtive z-0">
+      <div className="relative z-0">
         <Contact />
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
       </div>
     </div>
     </BrowserRouter>

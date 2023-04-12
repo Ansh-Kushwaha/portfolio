@@ -9,20 +9,20 @@ const Explorer = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={0.1} />
+      <hemisphereLight intensity={0.25} groundColor="black" />
+      <pointLight intensity={1} />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.24}
         penumbra={1}
-        intensity={0.75}
+        intensity={0.25}
         castShadow
         shadow-mapSize={1024}
       />
       <primitive 
         object={explorer.scene}
-        scale={isMobile ? 0.1 : 0.3}
-        position={isMobile ? [0, 0.75, -0.4] : [0, 0, 0.5]}
+        scale={isMobile ? 0.05 : 0.3}
+        position={isMobile ? [0, 0.75, -0.4] : [-0.125, 0, 0.5]}
       />
     </mesh>
   )
@@ -50,7 +50,7 @@ const ExplorerCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{position: [20, 3, 5], fov: 25 }}
+      camera={{position: [25, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
