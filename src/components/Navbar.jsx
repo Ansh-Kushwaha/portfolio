@@ -6,12 +6,35 @@ import { navLinks } from '../constants/constants';
 import { logo, menu, close } from '../assets'
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
+  const controlNavBar = () => {
+    if(typeof window != 'undefined') {
+      if(window.scrollY > lastScrollY) {
+        setShow(true)
+     } else {
+        setShow(false)
+      }
+      setLastScrollY(window.scrollY);
+    }
+  }
+
+  useEffect(() => {
+    if(typeof window != 'undefined') {
+      window.addEventListener('scroll', controlNavBar);
+
+      return () => {
+        window.removeEventListener('scroll', controlNavBar);
+      }
+    }
+  }, [lastScrollY])
+
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} active ${show && 'hidden'} w-full flex items-center py-5 fixed top-0 z-20 bg-nav rounded-b-3xl`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
