@@ -21,8 +21,8 @@ const Explorer = ({ isMobile }) => {
       />
       <primitive 
         object={explorer.scene}
-        scale={isMobile ? 0.05 : 0.3}
-        position={isMobile ? [0, 0.75, -0.4] : [-0.125, 0, 0.5]}
+        scale={isMobile ? 0.05 : 0.4}
+        // position={isMobile ? [0, 0, 0] : [0, 0, 0]}
       />
     </mesh>
   )
@@ -55,6 +55,8 @@ const ExplorerCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls 
+          autoRotate
+          autoRotateSpeed={5}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}

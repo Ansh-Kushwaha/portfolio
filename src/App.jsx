@@ -7,9 +7,9 @@ const App = () => {
     <BrowserRouter>
     <div className="relative z-0 bg-primary">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center relative">
+        <StarsCanvas />
         <Navbar />
         <Hero />
-        <StarsCanvas />
       </div>
       <About />
       <Skills />
