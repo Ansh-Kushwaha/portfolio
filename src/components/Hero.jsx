@@ -12,15 +12,14 @@ const Hero = () => {
       flex-row items-start gap-5`}>
         <div className="flex flex-col 
         justify-center items-center mt-5">
-          <div className="w-10 h-10 rounded-full 
-          bg-[#FE209D]" />
-          <div className="w-4 sm:h-80 h-40 pink-orange-gradient" />
+          <div className="w-4 h-4 rounded-[20%] bg-white" />
+          <div className="w-1 sm:h-80 h-40 white-gradient" />
         </div>
 
         <div className='z-[2]'>
           <h1 className={`${styles.heroHeadText} 
-          logo-text-gradient`}>Hi, I'm <span 
-          className="pink-orange-text-gradient">Ansh
+          text-white`}>Hi, I'm <span 
+          className="logo-text-gradient">Ansh
           </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2
