@@ -12,26 +12,26 @@ const Hero = () => {
       flex-row items-start gap-5`}>
         <div className="flex flex-col 
         justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full 
-          bg-[#644827]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-10 h-10 rounded-full 
+          bg-[#FE209D]" />
+          <div className="w-4 sm:h-80 h-40 pink-orange-gradient" />
         </div>
 
         <div className='z-[2]'>
           <h1 className={`${styles.heroHeadText} 
-          text-white`}>Hi, I'm <span 
-          className="text-[#B88B47]">Ansh
+          logo-text-gradient`}>Hi, I'm <span 
+          className="pink-orange-text-gradient">Ansh
           </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2
           text-white-100 z-20`}>
-            I Develop User Interfaces, 
-            <br className="sm:block hidden"/>Desktop, Android and Web Applications
+            An Undergraduate student, 
+            <br />and an Android Developer. 
           </p>
         </div>
       </div>
 
-      <ExplorerCanvas />
+      {/* <ExplorerCanvas /> */}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
