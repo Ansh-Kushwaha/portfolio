@@ -21,8 +21,8 @@ const Explorer = ({ isMobile }) => {
       />
       <primitive 
         object={explorer.scene}
-        scale={isMobile ? 0.05 : 0.4}
-        // position={isMobile ? [0, 0, 0] : [0, 0, 0]}
+        scale={isMobile ? 0.25 : 0.4}
+         position={isMobile ? [0, -2, 0] : [0, 0, 0]}
       />
     </mesh>
   )
@@ -32,7 +32,7 @@ const ExplorerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('max-width: 500');
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
     setIsMobile(mediaQuery.matches)
 
     const handleMediaQueryChange = (event) => {
