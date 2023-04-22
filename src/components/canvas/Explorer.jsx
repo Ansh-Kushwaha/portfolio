@@ -22,7 +22,7 @@ const Explorer = ({ isMobile }) => {
       <primitive 
         object={explorer.scene}
         scale={isMobile ? 0.25 : 0.4}
-         position={isMobile ? [0, -2, 0] : [0, 0, 0]}
+         position={isMobile ? [0, -1, 0] : [0, 0, 0]}
       />
     </mesh>
   )

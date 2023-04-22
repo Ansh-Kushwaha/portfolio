@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants/constants';
 import { logo, menu, close } from '../assets'
+import { slideIn } from '../utils/motion';
 
 const Navbar = () => {
   // const [show, setShow] = useState(false);
@@ -77,10 +79,10 @@ const Navbar = () => {
               onClick={() => setToggle(!toggle)}
             />
 
-            <div className={`${!toggle ? "hidden"
+            <motion.div className={`${!toggle ? "hidden"
             : "flex" } p-6 black-gradient absolute 
-            top-20 right-0 mx-4 my-2 min-w-[140px] 
-            z-10 rounded-xl`}>
+            top-20 right-0  min-w-[100px] 
+            z-10 rounded-s`}>
             <ul className="list-none flex justify-end items-start flex-col gap-4">
             {navLinks.map((link) => (
               <li
@@ -100,7 +102,7 @@ const Navbar = () => {
               </li>
             ))}
             </ul>
-          </div>
+          </motion.div>
           </div>
       </div>
     </nav>
