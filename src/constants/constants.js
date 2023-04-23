@@ -22,6 +22,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    leetcode,
   } from "../assets";
   
   export const navLinks = [
@@ -45,8 +46,8 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "React JS Developer",
+      icon: web,
     },
     {
       title: "Android Developer",
@@ -91,55 +92,59 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      company_name: "Projects",
+      icon: html,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jul 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Prepared some early projects such as JS-Clock, ToDo-List.",
+        "Learning web frameworks such as React.JS, Next.JS for collaborative projects.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "React.JS Developer",
+      company_name: "Learning",
+      icon: reactjs,
+      iconBg: "#383E56",
+      date: "Mar 2023 - Present",
+      points: [
+        "Preapred this portfolio website with React.JS",
+        "Currently working on different FrontEnd projects."
+      ],
+    },
+    {
+      title: "Android Developer",
+      company_name: "Learning",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Oct 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Learning Android development from Meta Android Specialization Certification",
+        "Have gained knowledge of programming languages such as Java and Kotlin",
+        "Currently developing projects with Jetpack Compose",
+      ],
+    },
+    {
+      title: "UI/UX Designer",
+      company_name: "Learning",
+      icon: figma,
+      iconBg: "#E6DEDD",
+      date: "Dec 2022 - Present",
+      points: [
+        "Developed high-fidelity mockups for projects.",
+        "Completed Meta certification on UI/UX Design."
+      ],
+    },
+    {
+      title: "Competetive Programming",
+      company_name: "Leetcode, CodeChef",
+      icon: leetcode,
+      iconBg: "#383E56",
+      date: "July 2022 - Present",
+      points: [
+        "Participated in many competetions on CodeChef. Max Rating 1645 (3 Star).",
+        "Solved over 100 questions based on different topics on Leetcode."
       ],
     },
   ];
