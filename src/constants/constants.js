@@ -90,7 +90,7 @@ import {
     },
   ];
   
-  const experiences = [
+  const skills = [
     {
       title: "Web Developer",
       company_name: "Projects",
@@ -242,4 +242,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, skills, testimonials, projects };

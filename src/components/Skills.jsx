@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from "../styles";
-import { experiences } from "../constants/constants";
+import { skills } from "../constants/constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => (
+const SkillCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={ {background: '#1d1836', color: '#fff'} }
     contentArrowStyle={{ borderRight: '7px solid #2326321'}}
@@ -50,8 +50,8 @@ const Skills = () => {
 
       <div className="empty-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experiences, index) => (
-            <ExperienceCard key={index} experience={experiences} />
+          {skills.map((skills, index) => (
+            <SkillCard key={index} experience={skills} />
           ))}
         </VerticalTimeline>
       </div>

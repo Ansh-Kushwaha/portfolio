@@ -4,7 +4,16 @@ import { styles } from "../styles";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants/constants";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
+
+const TechCard = ({ icon, index }) => (
+  <motion.div
+    className="w-24 h-24 card-gray-gradient flex justify-center items-center"
+    variants={fadeIn("right", "spring", index * 0.25, 0.75)}
+  >
+    <img src={icon} className="w-14 h-14"/>
+  </motion.div>
+)
 
 const Tech = () => {
   return (
@@ -14,9 +23,9 @@ const Tech = () => {
         </motion.div>
 
       <div className="flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map((technology) => (
+        {technologies.map((technology, index) => (
           <div className="w-24 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
+            <TechCard icon={technology.icon} index={index} />
           </div>  
         ))}
       </div>

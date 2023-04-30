@@ -43,6 +43,16 @@
   );
 }
 
+.card-gray-gradient {
+  background: #FFFFFF;
+  background: linear-gradient(-45deg, #FFFFFF 0%, #B7B7B7 100%);
+  background: -webkit-linear-gradient(
+    -45deg,
+    #FFFFFF 0%,
+    #B7B7B7 100%
+  );
+}
+
 .logo-text-gradient {
   background: #534C98; /* fallback for old browsers */
   background: -webkit-linear-gradient(
