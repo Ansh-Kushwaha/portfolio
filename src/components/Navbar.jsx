@@ -80,10 +80,10 @@ const Navbar = () => {
             />
 
             <motion.div className={`${!toggle ? "hidden"
-            : "flex" } p-6 black-gradient absolute 
+            : "flex" } p-4 black-gradient absolute 
             top-20 right-0  min-w-[100px] 
             z-10 rounded-s`}>
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
+            <ul className="list-none flex justify-end items-start flex-col gap-6">
             {navLinks.map((link) => (
               <li
                 key={link.id}

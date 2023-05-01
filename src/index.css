@@ -23,13 +23,13 @@
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #000000,
-    #282828
+    #0a0624,
+    #0b0628
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #000000,
-    #282828
+    #151030,
+    #0b0628
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -177,6 +177,46 @@
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
 }
+
+.hexagon-card {
+  position: relative;
+  width: 46%;
+  height: 80%;
+  margin: auto;
+  color: white;
+  background: linear-gradient(45deg, #FFFFFF 0%, #B7B7B7 100%);
+  /* background: #e6ffff; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.hexagon-card:before,
+.hexagon-card:after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.hexagon-card:before {
+  transform: rotateZ(60deg);
+}
+
+.hexagon-card:after {
+  transform: rotateZ(-60deg);
+}
+
+.hexagon-card:hover {
+  transform: rotate(30deg);
+  transition: 0.5s;
+}
+
 
 @keyframes mulShdSpin {
   0%,
