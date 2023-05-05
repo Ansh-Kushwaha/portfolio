@@ -141,14 +141,14 @@ import {
       ],
     },
     {
-      title: "Competetive Programming",
+      title: "Competitive Programming",
       company_name: "Leetcode, CodeChef",
       icon: leetcode,
       iconBg: "#383E56",
       date: "July 2022 - Present",
       points: [
         "Participated in many competitions on CodeChef. Max Rating 1645 (3 Star).",
-        "Solved over 100 questions based on different topics on Leetcode."
+        "Solved over 125 questions based on different topics on Leetcode."
       ],
     },
   ];

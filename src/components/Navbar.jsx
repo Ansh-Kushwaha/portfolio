@@ -52,8 +52,7 @@ const Navbar = () => {
             font-bold cursor-pointer flex">Ansh&nbsp;Kushwaha&nbsp;
               <span className="sm:block hidden">|&nbsp;Developer</span></p>
           </Link>
-          <ul className="list-none hidden sm:flex
-          flex-row gap-10">
+          <ul className="list-none hidden sm:flex flex-row gap-10">
             {navLinks.map((link) => (
               <li
                 key={link.id}
@@ -70,7 +69,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="sm:hidden flex flex-hidden
+          <div className="sm:hidden flex flex-[hidden]
           justify-end items-center">
             <img 
               src={toggle ? close : menu}
@@ -83,7 +82,7 @@ const Navbar = () => {
             : "flex" } p-4 black-gradient absolute 
             top-20 right-0  min-w-[100px] 
             z-10 rounded-s`}>
-            <ul className="list-none flex justify-end items-start flex-col gap-6">
+            <ul className="list-none flex justify-end items-start flex-col gap-6 my-3">
             {navLinks.map((link) => (
               <li
                 key={link.id}
