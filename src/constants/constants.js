@@ -102,7 +102,7 @@ import {
       iconBg: "#383E56",
       date: "Jul 2022 - Present",
       points: [
-        "Prepared some early projects such as JS-Clock, ToDo-List.",
+        "Prepared some early projects such as JS-Clock, Calculator, etc.",
         "Learning web frameworks such as React.JS, Next.JS for collaborative projects.",
       ],
     },
@@ -147,7 +147,7 @@ import {
       iconBg: "#383E56",
       date: "July 2022 - Present",
       points: [
-        "Participated in many competetions on CodeChef. Max Rating 1645 (3 Star).",
+        "Participated in many competitions on CodeChef. Max Rating 1645 (3 Star).",
         "Solved over 100 questions based on different topics on Leetcode."
       ],
     },

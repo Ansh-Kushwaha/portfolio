@@ -184,7 +184,7 @@
   height: 80%;
   margin: auto;
   color: white;
-  background: linear-gradient(45deg, #FFFFFF 0%, #B7B7B7 100%);
+  background: linear-gradient(45deg, #FFFFFF 0%, #dcdcdc 100%);
   /* background: #e6ffff; */
   display: flex;
   align-content: center;

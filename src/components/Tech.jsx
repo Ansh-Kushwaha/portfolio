@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const TechCard = ({ icon, index }) => (
   <motion.div
-    className="w-32 h-32 flex justify-center items-center"
+    className=" w-28 h-28 flex justify-center items-center"
     variants={fadeIn("right", "spring", index * 0.25, 0.75)}
   >
     <div
